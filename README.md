@@ -1,6 +1,6 @@
 # Java My MEMO
 
-------------------------------program基本------------------
+------------------------------program基本------------------<br>
 package 必要パッケージ;
 
 public class クラス名{
@@ -14,14 +14,14 @@ public class クラス名{
     }
 }
 
--------------------------------メソッド----------------------
+-------------------------------メソッド----------------------<br>
 setter--> name プロパティならsetName(String name){this.name = name;}
 //ほかclassから書き込み可能
 getter-->nameプロパティならgetName(){return this.name;}
 //ほかclassから読み込み可能
 ※プロパティのみだとアクセス修飾子指定で読み書き両方可/不可のみ
 
--------------------------------Cast------------------------------
+-------------------------------Cast------------------------------<br>
 String→int　Integer.parseInt(x)
 String→double　Double.parseDouble(x)
 数値→String　String.valueOf(x)
@@ -36,7 +36,7 @@ for (char c = s.charAt(0); c <= s.charAt(s.length()-1); c++)
 円周率　Math.PI
 aのb乗　Math.pow(double a,double b)
 
-------------------------------Scanner(java.util.Scanner) Class-----------------
+------------------------------Scanner(java.util.Scanner) Class-----------------<br>
 Scanner sc = new Scanner(System.in)
 sc.next() //単語単位
 sc.nextLine() //1行単位 読み飛ばしStringが２行目以降の時
@@ -46,10 +46,10 @@ List<String> line= Arrays.asList(sc.nextLine().split(""));//ラムダ
 
 sc.close()//クローズ
 
------------------------------Calendar(java.util.Calendar) Class-----------------------------
+-----------------------------Calendar(java.util.Calendar) Class-----------------------------<br>
 Calendar.getInstance() //メソッド...デフォルトのタイムゾーン(基準時刻(グリニッチ天文台)との差/日本は+9時間)とロケール(言語/地域の設定)でカレンダ取得
 
--------------------------------BigIntegerClass (import java.math.BigInteger)-------------------
+-------------------------------BigIntegerClass (import java.math.BigInteger)-------------------<br>
 和　BigInteger add(BigInteger x)
 ※BigInteger型はn++は使えないのでn=n.add(BigInteger.ONE) 
         this + x
@@ -73,7 +73,7 @@ Calendar.getInstance() //メソッド...デフォルトのタイムゾーン(基
 0　ZERO
 1　ONE
 
-------------------------------文字列のメソッド()------------------
+------------------------------文字列のメソッド()------------------<br>
 文字列の長さ　x.length()
 配列の長さ　x.length
 xを大文字　x.toUpperCase()
@@ -81,7 +81,7 @@ x.charAt(i) //char型 1字
 x.substring(i,j) //String型i-1~j字
 x.replace(a,b)//　aをbに置換
 
------------------------------printf(java.io.Console) メソッドprintf(String format,object...args)-------------
+-----------------------------printf(java.io.Console) メソッドprintf(String format,object...args)-------------<br>
 printfで桁指定
 最少桁　printf("[%5d]", 123)[△△123]
 文字列最大幅　printf([%.3s]", "abcde")[abc]
@@ -103,7 +103,7 @@ X　年＝tY :2018　ty :18
        分＝tM:04
        秒＝tS:05
 
------------------------------------比較-------------------------------
+-----------------------------------比較-------------------------------<br>
 ==とequals()
 s.matches("[0-9]")//正規表現０－９か
 
@@ -114,7 +114,7 @@ String str = "abcdefgb" ;
 Pattern p = Pattern.compile(pattern);
 System.out.println(p.matcher(str).find()) ;       //true
 
--------------------------------配列-------------------------
+-------------------------------配列-------------------------<br>
 for(int[] tmp: array){ 
   for(int val : tmp){ 
   System.out.println(val); } }//2次元配列
