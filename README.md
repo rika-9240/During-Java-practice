@@ -1,48 +1,48 @@
 # Java My MEMO
 
 ------------------------------program基本------------------<br>
-package 必要パッケージ;
-
-public class クラス名{
-    public stat[]ic void main(String[] args){
-        フィールド;
-        メソッド(必要変数);
-    }
-    static 戻り値型 メソッド(データ型 変数名,...複数可能){
-        メソッド処理;
-        return 戻す値の変数;
-    }
-}
+package 必要パッケージ;<br>
+<br>
+public class クラス名{<br>
+    public stat[]ic void main(String[] args){<br>
+        フィールド;<br>
+        メソッド(必要変数);<br>
+    }<br>
+    static 戻り値型 メソッド(データ型 変数名,...複数可能){<br>
+        メソッド処理;<br>
+        return 戻す値の変数;<br>
+    }<br>
+}<br>
 
 -------------------------------メソッド----------------------<br>
-setter--> name プロパティならsetName(String name){this.name = name;}
-//ほかclassから書き込み可能
-getter-->nameプロパティならgetName(){return this.name;}
-//ほかclassから読み込み可能
-※プロパティのみだとアクセス修飾子指定で読み書き両方可/不可のみ
+setter--> name プロパティならsetName(String name){this.name = name;}<br>
+//ほかclassから書き込み可能<br>
+getter-->nameプロパティならgetName(){return this.name;}<br>
+//ほかclassから読み込み可能<br>
+※プロパティのみだとアクセス修飾子指定で読み書き両方可/不可のみ<br>
 
 -------------------------------Cast------------------------------<br>
-String→int　Integer.parseInt(x)
-String→double　Double.parseDouble(x)
-数値→String　String.valueOf(x)
-int →char (char)x;
-//String s；
-for (char c = s.charAt(0); c <= s.charAt(s.length()-1); c++)
-          System.out.println(c);
-    } //ｓの最初のアルファベット～ｓの最後のアルファベットを表示
-下一桁表示　String.format("%.1f",x)　
-　MathClass
-小数点以下四捨五入　Math.round(x)
-円周率　Math.PI
-aのb乗　Math.pow(double a,double b)
+String→int　Integer.parseInt(x)<br>
+String→double　Double.parseDouble(x)<br>
+数値→String　String.valueOf(x)<br>
+int →char (char)x;<br>
+//String s；<br>
+for (char c = s.charAt(0); c <= s.charAt(s.length()-1); c++)<br>
+          System.out.println(c);<br>
+    } //ｓの最初のアルファベット～ｓの最後のアルファベットを表示<br>
+下一桁表示　String.format("%.1f",x)　<br>
+　MathClass<br>
+小数点以下四捨五入　Math.round(x)<br>
+円周率　Math.PI<br>
+aのb乗　Math.pow(double a,double b)<br>
 
 ------------------------------Scanner(java.util.Scanner) Class-----------------<br>
-Scanner sc = new Scanner(System.in)
-sc.next() //単語単位
-sc.nextLine() //1行単位 読み飛ばしStringが２行目以降の時
-sc.nextInt() //数字単語単位
-String str[] = sc.nextLine().split("");//一文字づつ配列へ
-List<String> line= Arrays.asList(sc.nextLine().split(""));//ラムダ
+Scanner sc = new Scanner(System.in)<br>
+sc.next() //単語単位<br>
+sc.nextLine() //1行単位 読み飛ばしStringが２行目以降の時<br>
+sc.nextInt() //数字単語単位<br>
+String str[] = sc.nextLine().split("");//一文字づつ配列へ<br>
+List<String> line= Arrays.asList(sc.nextLine().split(""));//ラムダ<br>
 
 sc.close()//クローズ
 
@@ -104,12 +104,12 @@ X　年＝tY :2018　ty :18
        秒＝tS:05
 
 -----------------------------------比較-------------------------------<br>
-==とequals()
-s.matches("[0-9]")//正規表現０－９か
+==とequals()<br>
+s.matches("[0-9]")//正規表現０－９か<br>
 
-importjava.util.regex.Pattern;
-String pattrn = "b$" ;
-//"~$" 末尾が~
+importjava.util.regex.Pattern;<br>
+String pattrn = "b$";<br>
+//"~$" 末尾が~<br>
 //先頭なら"^~"
 String str = "abcdefgb" ;
 Pattern p = Pattern.compile(pattern);
