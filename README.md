@@ -2,6 +2,8 @@
 
 ------------------------------program基本------------------<br>
 package 必要パッケージ;<br>
+import java.math; //java.lang以外はimportで使えるようにする...あるいは<br>
+//インスタンス生成時　「パッケージ名.class名 クラス変数名 = new パッケージ名.class名();」でも可<br>
 <br>
 public class クラス名{<br>
     public stat[]ic void main(String[] args){<br>
