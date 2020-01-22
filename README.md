@@ -109,7 +109,8 @@ s.matches("[0-9]")//正規表現０－９か
 
 importjava.util.regex.Pattern;
 String pattrn = "b$" ;
-//"~$" 末尾が~//先頭なら"^~"
+//"~$" 末尾が~
+//先頭なら"^~"
 String str = "abcdefgb" ;
 Pattern p = Pattern.compile(pattern);
 System.out.println(p.matcher(str).find()) ;       //true
