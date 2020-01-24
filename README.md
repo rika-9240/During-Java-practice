@@ -76,12 +76,13 @@ Calendar.getInstance() //メソッド...デフォルトのタイムゾーン(基
 1　ONE
 
 ------------------------------文字列のメソッド()------------------<br>
-文字列の長さ　x.length()
-配列の長さ　x.length
-xを大文字　x.toUpperCase()
-x.charAt(i) //char型 1字
-x.substring(i,j) //String型i-1~j字
-x.replace(a,b)//　aをbに置換
+文字列の長さ　x.length()<br>
+配列の長さ　x.length<br>
+xを大文字　x.toUpperCase()<br>
+x.charAt(i) //char型 1字<br>
+x.substring(i,j) //String型i-1~j字<br>
+x.replace(a,b)//　aをbに置換<br>
+x.replaceAll("[aiueo]","") //複数の文字を置換...この場合aiueoすべて文字列から無くす<br>
 
 -----------------------------printf(java.io.Console) メソッドprintf(String format,object...args)-------------<br>
 printfで桁指定
