@@ -136,6 +136,11 @@ int[] data = {4,1,2,5,3}; <br>
 for(int i=0; i<4; i++){<br>
 for(int j=0; j<4-i; j++){<br>
 if(data[j]<data[j+1]){ <br>
-int temp=data[j]; data[j]=data[j+1]; data[j+1]=temp; } } }//配列ソート
-  Arrays.sort(i);//ソートメソッド
+int temp=data[j]; data[j]=data[j+1]; data[j+1]=temp; } } }//配列ソート<br>
+  Arrays.sort(i);//ソートメソッド<br>
+  <br>
+----------------------------ArrayList<type>------------<br>
+ArrayList<type> array = new ArrayList<>();...type intはInteger<br>
+ArrayList<Arraylist<type>> array = new ArrayList<>();...2次は先に宣言<br>
+    for文などの中...ArrayList<type> array = new ArrayList<>();<br>
 
