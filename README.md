@@ -120,10 +120,22 @@ Pattern p = Pattern.compile(pattern);
 System.out.println(p.matcher(str).find()) ;       //true
 
 -------------------------------配列-------------------------<br>
-for(int[] tmp: array){ 
-  for(int val : tmp){ 
-  System.out.println(val); } }//2次元配列
+int[] a = {0,2};
+for(int i: a){System.out.println(i);} ...あるいは<br>
+Arrays.stream(a).forEach(System.out::println);...あるいは<br>
+System.out.println(Arrays.toString(a));<br>
+System.out.println(a.toString());...配列変数のハッシュ値<br>
 
-int[] data = {4,1,2,5,3}; for(int i=0; i<4; i++){ for(int j=0; j<4-i; j++){ if(data[j]<data[j+1]){ int temp=data[j]; data[j]=data[j+1]; data[j+1]=temp; } } }//配列ソート
+for(int[] tmp: array){<br> 
+  for(int val : tmp){ <br>
+  System.out.println(val); } }//2次元配列...あるいは<br>
+System.out.println(Arrays.deepToString(array));<br>
+System.out.println(Arrays.toString(array));...クラスとハッシュ値<br>
+<br>
+int[] data = {4,1,2,5,3}; <br>
+for(int i=0; i<4; i++){<br>
+for(int j=0; j<4-i; j++){<br>
+if(data[j]<data[j+1]){ <br>
+int temp=data[j]; data[j]=data[j+1]; data[j+1]=temp; } } }//配列ソート
   Arrays.sort(i);//ソートメソッド
 
