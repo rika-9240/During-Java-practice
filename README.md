@@ -86,26 +86,26 @@ x.replaceAll("[aiueo]","") //複数の文字を置換...この場合aiueoすべ�
 
 -----------------------------printf(java.io.Console) メソッドprintf(String format,object...args)-------------<br>
 printfで桁指定
-最少桁　printf("[%5d]", 123)[△△123]
-文字列最大幅　printf([%.3s]", "abcde")[abc]
-左詰　printf([%-5s]", "abc")[abc△△]
-0詰　printf("[%05d]",123);[00123]
-n改行　printf("abc%ndef");abc<改行>def
-引数の番号　printf("%3$s,%2$s,%1$s",
-"str1","str2","str3");str3,str2,str1
-数値の桁数を習得　
-int val = 100;int v = String.valueOf(val).length();//3
-
-時間　printf("%tT", new Date());17:04:05
-日付　printf("%tF", new Date());2018-01-05
-printf("%X", new Date());
-X　年＝tY :2018　ty :18
-       月＝tm :01
-       日＝td :01　te :1
-       時＝tH:17　tI:5(L,iどちらも可)
-       分＝tM:04
-       秒＝tS:05
-
+最少桁　printf("[%5d]", 123)[△△123]<br>
+文字列最大幅　printf([%.3s]", "abcde")[abc]<br>
+左詰　printf([%-5s]", "abc")[abc△△]<br>
+0詰　printf("[%05d]",123);[00123]<br>
+n改行　printf("abc%ndef");abc<改行>def<br>
+引数の番号　printf("%3$s,%2$s,%1$s",<br>
+"str1","str2","str3");str3,str2,str1<br>
+数値の桁数を習得　<br>
+int val = 100;int v = String.valueOf(val).length();//3<br>
+<br>
+時間　printf("%tT", new Date());17:04:05<br>
+日付　printf("%tF", new Date());2018-01-05<br>
+printf("%X", new Date());<br>
+X　年＝tY :2018　ty :18<br>
+       月＝tm :01<br>
+       日＝td :01　te :1<br>
+       時＝tH:17　tI:5(L,iどちらも可)<br>
+       分＝tM:04<br>
+       秒＝tS:05<br>
+<br>
 -----------------------------------比較-------------------------------<br>
 ==とequals()<br>
 ==は関係演算子
