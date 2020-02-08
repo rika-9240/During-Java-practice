@@ -65,28 +65,28 @@ max(x,y)...大きい方
 min(x,y)...小さい方
 
 -------------------------------BigIntegerClass (import java.math.BigInteger)-------------------<br>
-和　BigInteger add(BigInteger x)
-※BigInteger型はn++は使えないのでn=n.add(BigInteger.ONE) 
-        this + x
-積　BigInteger multiply(BigInteger x)
-        this * x
-商　BigInteger divide(BigInteger x)
-        this / x
-剰余　BigInteger remainder(BIgInteger x)
-            this % x
-符号判定　int signum()     x.signum() != 1//判定例　整数でない場合
-　　　　　x<0 : -1
-                    x=0 : 0
-                    x>0 : 1
-比較　int cimpareTo(BigInteger x)
-            this < x : -1
-            this = x : 0
-            this > x : 1
-等価性　boolean equals(Object x)
-                this = x
-新インスタンス　static BigInteger valueOf(long x)
-0　ZERO
-1　ONE
+和　BigInteger add(BigInteger x)<br>
+※BigInteger型はn++は使えないのでn=n.add(BigInteger.ONE)<br> 
+        this + x<br>
+積　BigInteger multiply(BigInteger x)<br>
+        this * x<br>
+商　BigInteger divide(BigInteger x)<br>
+        this / x<br>
+剰余　BigInteger remainder(BIgInteger x)<br>
+            this % x<br>
+符号判定　int signum()     x.signum() != 1//判定例　整数でない場合<br>
+　　　　　x<0 : -1<br>
+                    x=0 : 0<br>
+                    x>0 : 1<br>
+比較　int cimpareTo(BigInteger x)<br>
+            this < x : -1<br>
+            this = x : 0<br>
+            this > x : 1<br>
+等価性　boolean equals(Object x)<br>
+                this = x<br>
+新インスタンス　static BigInteger valueOf(long x)<br>
+0　ZERO<br>
+1　ONE<br>
 
 ------------------------------文字列のメソッド()------------------<br>
 文字列の長さ　x.length()<br>
