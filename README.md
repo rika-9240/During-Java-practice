@@ -33,10 +33,6 @@ for (char c = s.charAt(0); c <= s.charAt(s.length()-1); c++)<br>
           System.out.println(c);<br>
     } //ｓの最初のアルファベット～ｓの最後のアルファベットを表示<br>
 下一桁表示　String.format("%.1f",x)　<br>
-　MathClass<br>
-小数点以下四捨五入　Math.round(x)<br>
-円周率　Math.PI<br>
-aのb乗　Math.pow(double a,double b)<br>
 
 ------------------------------Scanner(java.util.Scanner) Class-----------------<br>
 Scanner sc = new Scanner(System.in)<br>
@@ -50,6 +46,23 @@ sc.close()//クローズ
 
 -----------------------------Calendar(java.util.Calendar) Class-----------------------------<br>
 Calendar.getInstance() //メソッド...デフォルトのタイムゾーン(基準時刻(グリニッチ天文台)との差/日本は+9時間)とロケール(言語/地域の設定)でカレンダ取得
+
+------------------------------MathClass------------------<br>
+Math.XXX(x)or(x,y);
+adx(x)...絶対値
+acos(x)...アークコサイン
+asin(x)...アークサイン
+atan(x)...アークタンジェント
+cos(x)...コサイン
+sin(x)...サイン
+sqrt(x)...平方根
+pow(x,y)...xのy乗
+PI...円周率
+ceil(x)...小数点以下切り上げ
+floor(x)...小数点以下切り捨て
+round(x)...小数点以下四捨五入
+max(x,y)...大きい方
+min(x,y)...小さい方
 
 -------------------------------BigIntegerClass (import java.math.BigInteger)-------------------<br>
 和　BigInteger add(BigInteger x)
