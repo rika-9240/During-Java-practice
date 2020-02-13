@@ -159,10 +159,11 @@ ArrayList<Arraylist<type>> array = new ArrayList<>();...2次は先に宣言<br>
     for文などの中...ArrayList<type> array = new ArrayList<>();<br>
 
 ------------------------------Set<ラッパーtype>------------<br>
-Set<Integer> number = new TreeSet<>();　　//TreeSet...自然順序付けで格納<br>
+Set<Integer> number = new TreeSet<>();　　          //TreeSet...自然順序付けで格納<br>
 number.add(00); //追加<br>
 number.addAll(set,0,1,2,3);<br>
-   ※for(i=0;i<n;i++){}(インデックス使用ループ)は使えないので注意<br>
+number.contains(x) //xがSetの中にないか
+   ※for(i=0;i<n;i++){}(インデックス使用ループ)は使えないので注意<br>whileでやったら最初が空になった？？？
 　　　print手段<br>
 　拡張for文<br>
 　Java８からStream/default/forEach<br>
@@ -181,4 +182,5 @@ Iterator<String> itr = set.iterator();<br>
 while (itr.hasNext()) {<br>
     System.out.println(itr.next());<br>
 }<br>
-    
+
+
