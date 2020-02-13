@@ -163,10 +163,22 @@ Set<Integer> number = new TreeSet<>();　　//TreeSet...自然順序付けで格
 number.add(00); //追加<br>
 number.addAll(set,0,1,2,3);<br>
    ※for(i=0;i<n;i++){}(インデックス使用ループ)は使えないので注意<br>
-print手段<br>
-拡張for文<br>
-Java８からStream/default/forEach<br>
+　　　print手段<br>
+　拡張for文<br>
+　Java８からStream/default/forEach<br>
 Set<String> set = new HashSet<>();...<br>                                                    
 set.stream().filter(v -> v.length() == 4).collect(Collectors.toSet());<br>
 set.stream().map(String::toUpperCase).collect(Collectors.toSet());<br>
 set.forEach(System.out::println);<br>
+   イテレータ<br>
+    Set<String> set = new HashSet<>();<br>
+Collections.addAll(set, "hoge", "fuga", "bar");<br>
+for (Iterator<String> itr = set.iterator(); itr.hasNext();) {<br>
+    System.out.println(itr.next());<br>
+}<br>
+
+Iterator<String> itr = set.iterator();<br>
+while (itr.hasNext()) {<br>
+    System.out.println(itr.next());<br>
+}<br>
+    
