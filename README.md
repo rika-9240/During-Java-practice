@@ -162,7 +162,7 @@ ArrayList<Arraylist<type>> array = new ArrayList<>();...2次は先に宣言<br>
 Set<Integer> number = new TreeSet<>();<br>
 number.add(00); //追加<br>
 number.addAll(set,0,1,2,3);<br>
-   ※for(i=0;i<n;i++){}は使えないので注意<br>
+   ※for(i=0;i<n;i++){}(インデックス使用ループ)は使えないので注意<br>
 print手段<br>
 拡張for文<br>
 Java８からStream/default/forEach<br>
