@@ -140,6 +140,12 @@ Arrays.stream(a).forEach(System.out::println);...あるいは<br>
 System.out.println(Arrays.toString(a));<br>
 System.out.println(a.toString());...配列変数のハッシュ値<br>
 
+代入、拡張for文ではできないよう<br>
+        for(int i=0;i<n;i++){<br>
+            for(int j=0;j<m;j++){<br>
+                mn[i][j] = sc.nextInt();<br>
+            }<br>
+        }<br>
 for(int[] tmp: array){<br> 
   for(int val : tmp){ <br>
   System.out.println(val); } }//2次元配列...あるいは<br>
