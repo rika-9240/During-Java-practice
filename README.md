@@ -130,7 +130,7 @@ s.matches("[0-9]")//正規表現０－９か<br>
 
 importjava.util.regex.Pattern;<br>
 String pattrn = "b$";<br>
-//"~$" 末尾が~<br>
+//"\~$" 末尾が\~<br>
 //先頭なら"^~"<br>
 String str = "abcdefgb" ;<br>
 Pattern p = Pattern.compile(pattern);<br>
