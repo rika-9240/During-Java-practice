@@ -5,17 +5,18 @@ package 必要パッケージ;<br>
 import java.math; //java.lang以外はimportで使えるようにする...あるいは<br>
 //インスタンス生成時　「パッケージ名.class名 クラス変数名 = new パッケージ名.class名();」でも可<br>
 <br>
-public class クラス名{<br>
-    public stat[]ic void main(String[] args){<br>
-        フィールド;<br>
-        メソッド(必要変数);<br>
-    }<br>
-    static 戻り値型 メソッド(データ型 変数名,...複数可能){<br>
-        メソッド処理;<br>
-        return 戻す値の変数;<br>
-    }<br>
-}<br>
-
+```java
+public class クラス名{
+    public stat[]ic void main(String[] args){
+        フィールド;
+        メソッド(必要変数);
+    }
+    static 戻り値型 メソッド(データ型 変数名,...複数可能){
+        メソッド処理;
+        return 戻す値の変数;
+    }
+}
+```
 -------------------------------メソッド----------------------<br>
 setter--> name プロパティならsetName(String name){this.name = name;}<br>
 //ほかclassから書き込み可能<br>
@@ -29,9 +30,11 @@ String→double　Double.parseDouble(x)<br>
 数値→String　String.valueOf(x)<br>
 int →char (char)x;<br>
 //String s；<br>
-for (char c = s.charAt(0); c <= s.charAt(s.length()-1); c++)<br>
-          System.out.println(c);<br>
-    } //ｓの最初のアルファベット～ｓの最後のアルファベットを表示<br>
+```java
+for (char c = s.charAt(0); c <= s.charAt(s.length()-1); c++)
+          System.out.println(c);
+    } //ｓの最初のアルファベット～ｓの最後のアルファベットを表示
+```
 下一桁表示　String.format("%.1f",x)　<br>
 
 ------------------------------Scanner(java.util.Scanner) Class-----------------<br>
@@ -141,6 +144,7 @@ System.out.println(Arrays.toString(a));<br>
 System.out.println(a.toString());...配列変数のハッシュ値<br>
 
 代入、拡張for文ではできないよう<br>
+```java
         for(int i=0;i<n;i++){<br>
             for(int j=0;j<m;j++){<br>
                 mn[i][j] = sc.nextInt();<br>
@@ -158,7 +162,7 @@ for(int j=0; j<4-i; j++){<br>
 if(data[j]<data[j+1]){ <br>
 int temp=data[j]; data[j]=data[j+1]; data[j+1]=temp; } } }//配列ソート<br>
   Arrays.sort(i);//ソートメソッド<br>
-  <br>
+  ```
 ----------------------------ArrayList<type>------------<br>
 ArrayList<type> array = new ArrayList<>();...type intはInteger<br>
 ArrayList<Arraylist<type>> array = new ArrayList<>();...2次は先に宣言<br>
