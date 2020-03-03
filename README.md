@@ -145,23 +145,23 @@ System.out.println(a.toString());...配列変数のハッシュ値<br>
 
 代入、拡張for文ではできないよう<br>
 ```java
-        for(int i=0;i<n;i++){<br>
-            for(int j=0;j<m;j++){<br>
-                mn[i][j] = sc.nextInt();<br>
-            }<br>
-        }<br>
-for(int[] tmp: array){<br> 
-  for(int val : tmp){ <br>
-  System.out.println(val); } }//2次元配列...あるいは<br>
-System.out.println(Arrays.deepToString(array));<br>
-System.out.println(Arrays.toString(array));...クラスとハッシュ値<br>
-<br>
-int[] data = {4,1,2,5,3}; <br>
-for(int i=0; i<4; i++){<br>
-for(int j=0; j<4-i; j++){<br>
-if(data[j]<data[j+1]){ <br>
-int temp=data[j]; data[j]=data[j+1]; data[j+1]=temp; } } }//配列ソート<br>
-  Arrays.sort(i);//ソートメソッド<br>
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                mn[i][j] = sc.nextInt();
+            }
+        }
+for(int[] tmp: array){ 
+  for(int val : tmp){ 
+  System.out.println(val); } }//2次元配列...あるいは
+System.out.println(Arrays.deepToString(array));
+System.out.println(Arrays.toString(array));...クラスとハッシュ値
+
+int[] data = {4,1,2,5,3}; 
+for(int i=0; i<4; i++){
+for(int j=0; j<4-i; j++){
+if(data[j]<data[j+1]){ 
+int temp=data[j]; data[j]=data[j+1]; data[j+1]=temp; } } }//配列ソート
+  Arrays.sort(i);//ソートメソッド
   ```
 ----------------------------ArrayList<type>------------<br>
 ArrayList<type> array = new ArrayList<>();...type intはInteger<br>
