@@ -111,6 +111,7 @@ printfで桁指定
 n改行　printf("abc%ndef");abc<改行>def<br>
 引数の番号　printf("%3$s,%2$s,%1$s",<br>
 "str1","str2","str3");str3,str2,str1<br>
+四捨五入で桁数指定表示　"%3.1f",58.666 →58.7 ※intは(double)
 数値の桁数を習得　<br>
 int val = 100;int v = String.valueOf(val).length();//3<br>
 <br>
