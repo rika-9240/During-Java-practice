@@ -27,6 +27,7 @@ getter-->nameプロパティならgetName(){return this.name;}<br>
 -------------------------------Cast------------------------------<br>
 String→int　Integer.parseInt(x)<br>
 String→double　Double.parseDouble(x)<br>
+String→char[] x.toCharArray() 1文字の変換ならc[0]で使用(c[0]-64で文字A-Zの何番目か)
 数値→String　String.valueOf(x)<br>
 int →char (char)x;<br>
 //String s；<br>
