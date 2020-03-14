@@ -14,8 +14,8 @@
 - build.xmlをプロジェクトに追加するときに使う  
 [+]...Antビルドファイルを追加  
 [-]...ビルドファイルへの参照を削除  
-[ :arrow_forward: ]...ビルドターゲットを実行   
 [![](https://github.com/rika-9240/boilerplate/blob/master/path/fillter%20mark.png?raw=true)]...description属性のみ表示  
+[ :arrow_forward: ]...ビルドターゲットを実行   
 
 ### できること
 - Antビルドスクリプトをプロジェクトに追加する
